@@ -4,9 +4,15 @@ import "./usersList.styles.css";
 
 const UsersList = () => {
   const { usersData, counter } = useSelector((state) => state.usersReducer);
-  let dataToRender = usersData.slice(0, counter);
+  const { searchField } = useSelector((state) => state.searchReducer);
 
-  console.log(dataToRender);
+  const data = searchField
+    ? usersData.filter((item) =>
+        item.name.toLowerCase().includes(searchField.toLowerCase())
+      )
+    : usersData;
+  let dataToRender = data.slice(0, counter);
+
   return (
     <div className="users-wrapper">
       {dataToRender.map((user, index) => (
