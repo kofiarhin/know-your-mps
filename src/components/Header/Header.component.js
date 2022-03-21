@@ -15,10 +15,6 @@ const Header = () => {
 
         <Search />
 
-        <nav>
-          <Link to="/"> Home</Link>
-        </nav>
-
         <div className="menu" onClick={() => dispatch(showSideNav())}>
           <i className="fa fa-bars"></i>
         </div>

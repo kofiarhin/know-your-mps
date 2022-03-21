@@ -3,7 +3,9 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="slug-wrapper">
-        <p>Created By: Kofi Arhin</p>
+        <a href="https://github.com/kofiarhin?tab=repositories" target="_blank">
+          Created By Kofi Arhin
+        </a>
       </div>
     </div>
   );

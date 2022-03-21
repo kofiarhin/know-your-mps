@@ -5,6 +5,7 @@ import UsersList from "./components/UsersList/UsersLists.component";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header, Footer, SideNav } from "./components";
 import { Home, Details } from "./Pages";
+import "./app.styles.css";
 
 const App = () => {
   const { isPending } = useSelector((state) => state.usersReducer);
@@ -17,7 +18,7 @@ const App = () => {
     dispatch(getUsers());
   }, [dispatch, showSideNav]);
   return (
-    <div>
+    <div className="app">
       <Router>
         <Header />
         {showSideNav && <SideNav />}
