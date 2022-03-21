@@ -1,0 +1,29 @@
+.user-unit {
+  text-align: center;
+}
+.user-unit h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.user-unit p {
+  font-size: 1.2rem;
+}
+
+.user-unit .cover {
+  margin-bottom: 1rem;
+  height: 400px;
+}
+
+@media (max-width: 640px) {
+  .user-unit h1 {
+    font-size: 1.2rem;
+  }
+
+  .user-unit p {
+    font-size: 1rem;
+  }
+  .user-unit .cover {
+    height: 200px;
+  }
+}

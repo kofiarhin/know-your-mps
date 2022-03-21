@@ -1,0 +1,13 @@
+.footer {
+  background-color: black;
+  color: white;
+}
+
+.footer .slug-wrapper {
+  text-align: center;
+  padding: 3rem 0rem;
+}
+
+.footer p {
+  font-size: 1.2rem;
+}
