@@ -3,15 +3,15 @@ import User from "../User/User.component";
 import "./usersList.styles.css";
 
 const UsersList = () => {
-  const { usersData } = useSelector((state) => state.usersReducer);
+  const { usersData, counter } = useSelector((state) => state.usersReducer);
+  let dataToRender = usersData.slice(0, counter);
 
+  console.log(dataToRender);
   return (
-    <div className="container">
-      <div className="users-wrapper">
-        {usersData.map((user, index) => (
-          <User user={user} key={index} />
-        ))}
-      </div>
+    <div className="users-wrapper">
+      {dataToRender.map((user, index) => (
+        <User user={user} key={index} />
+      ))}
     </div>
   );
 };

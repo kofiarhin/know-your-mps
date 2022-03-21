@@ -1,0 +1,11 @@
+.home .button-wrapper {
+  padding: 2rem 0rem;
+}
+
+.home .button-wrapper button {
+  display: block;
+  padding: 2rem 0rem;
+  width: 100%;
+  background-color: black;
+  color: white;
+}

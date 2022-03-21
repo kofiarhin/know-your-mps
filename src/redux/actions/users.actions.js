@@ -2,6 +2,7 @@ import {
   GET_USERS_PENDING,
   GET_USERS_SUCCESS,
   GET_USERS_FAILED,
+  INCREASE_COUNTER,
 } from "../constants";
 
 export const getUsers = () => (dispatch) => {
@@ -23,4 +24,10 @@ export const getUsers = () => (dispatch) => {
         error,
       });
     });
+};
+
+export const increaseCounter = () => {
+  return {
+    type: INCREASE_COUNTER,
+  };
 };

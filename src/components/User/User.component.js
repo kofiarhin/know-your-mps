@@ -4,8 +4,6 @@ import BackgroundImage from "../BackgroundImage/BackgroundImage.component";
 const User = ({ user }) => {
   const { name, photo, party, partyAbbr, ...rest } = user;
 
-  console.log(rest);
-
   const imgUrl = `url(${photo})`;
 
   return (
